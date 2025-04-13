@@ -124,3 +124,26 @@ w2=f"{w['name']}: {w['url']}"
 
 print(len(w1))
 print(w2)
+
+
+list.append("add site")
+print(list)
+
+del list[0]
+print(list)
+
+d={'name':'o2'}
+d['age']=20
+print(d)
+
+s={1,2,3,4,5}
+s.add(11)
+print(s)
+
+if(len(s)>4):
+    print("size > 4")
+elif(len(s)<4):
+    print("size < 4")
+else:
+    print("size == 4")
+
