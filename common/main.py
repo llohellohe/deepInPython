@@ -1,3 +1,5 @@
+import math
+
 print("hello world !")
 姓="诸葛"
 名="亮"
@@ -147,3 +149,4 @@ elif(len(s)<4):
 else:
     print("size == 4")
 
+print(math.pi)

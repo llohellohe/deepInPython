@@ -20,3 +20,8 @@ pt()
 
 print(util.__name__)
 print(__name__)
+
+util.read_file_by_line("/Users/yangqi/dev/deepInPython/common/util.py")
+
+filelist=util.listdir("/Users/yangqi/dev/deepInPython/common/")
+print(filelist)
