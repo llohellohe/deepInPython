@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "f0f7e5c954764e1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6afa5df659b874c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8075e3db8c8c498",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "python/Python3 学习记录 2025.05 进阶.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Python3 学习记录 2025.05 进阶"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6a4349734cc2998c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f701de8814a74da3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d5aef7c28f67b5e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "dd9fe2eaf554162f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "2a249b1aee181c16",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0a989fc71218a9ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "11f2efcc28fe8ce3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be2f54150cf2b6e3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "欢迎.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "欢迎 的反向链接列表"
+            }
+          },
+          {
+            "id": "6feea271aba51b88",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "欢迎.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "欢迎 的出链列表"
+            }
+          },
+          {
+            "id": "3b34ee7cb1fe519e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "bfc914ea5220a612",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "欢迎.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "欢迎 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "e8075e3db8c8c498",
+  "lastOpenFiles": [
+    "python/MCP Example中的源码分析.md",
+    "python/airflow.md",
+    "欢迎.md",
+    "python",
+    "未命名",
+    "图片/Pasted image 20250505144647.png",
+    "图片/Pasted image 20250504200143.png",
+    "图片/Pasted image 20250504183813.png",
+    "图片/Pasted image 20250504182700.png",
+    "图片/Pasted image 20250415133636.png",
+    "图片/Pasted image 20250504182507.png",
+    "图片/Pasted image 20250504200435.png",
+    "图片/Pasted image 20250504185450.png",
+    "图片/Pasted image 20250504184112.png",
+    "图片/Pasted image 20250504185146.png",
+    "python/Python3 学习记录 2025.05 进阶.md",
+    "python/Python3 学习记录 2025.05 错题记录.md",
+    "python/Python3 学习记录 2025.04 part4 (协程).md",
+    "python/Python3 学习记录 2025.04 part3 (面向对象).md",
+    "python/Python3 学习记录 2025.04 part2 (模块).md",
+    "python/Python3 学习记录 2025.04 part1 (基础).md",
+    "python/pip报错.md",
+    "图片"
+  ]
+}
