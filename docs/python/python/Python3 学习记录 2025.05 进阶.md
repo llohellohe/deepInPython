@@ -110,6 +110,78 @@ tokens[-1:]
 * 所以tokens[-1:]代表为取最后一个元素
 ```
 
+## #切片 使用切片方式的插入
+
+```
+list1 = [1, 3, 11, 2, 4, 4]  
+list1[1:3] = ['A','B','C','D']  
+print(list1)
+# [1, 'A', 'B', 'C', 'D', 2, 4, 4]
+
+list1[1:1]=['A1']
+# [1, 'A1', 'A', 'B', 'C', 'D', 2, 4, 4]
+```
+
+在list的[1:3]位置范围处，抹去位置上的对应值，插入新的值。
+* 假设实际插入的值，比位置元素范围多，则原列表中的后续元素递延
+* 假设实际插入的值，比位置元素范围少，则依旧按照原位置元素抹去
+* 即最终执行顺序为：
+	* 1.先按照位置的start\end删除元素
+	* 2.按照具体的新值做插入
+* 如果插入的切片为 [start:start]代表在这个位置处，直接插入新值，原来的元素不会被抹除
+	* 切片 list[start:start]返回[]列表
+
+```
+list1 = [1, 3, 11, 2, 4, 4]  
+list1[1:3] = ['A','B','C','D']  
+print(list1)
+# [1, 'A', 'B', 'C', 'D', 2, 4, 4]
+
+print(list1[-3:-4:-1])  
+print(list1[-3:-2:-1])
+# [2] ，因为-1 代表start和end顺序变为从右到左，按照-3 到 -4，包含一个元素
+# [] ，因为-1 代表start和end顺序变为从右到左，按照-3 到 -2 顺序，不包含任何东西，所以为空
+```
 # MAX函数
 https://blog.csdn.net/u013250071/article/details/118220139
 ![[Pasted image 20250510144831.png]]
+
+* 可以获得list\tuple等中最大的值
+* 可以获得dict中，key最大的值
+* 也可以获得dict中,value最大的值，需要使用key=dict.get 参数
+* 也可以获得字符串，按照字符出现的个数
+```
+字符串count函数
+s1 = "AAAccBBe"  
+
+# S1中，最大的字符
+print(max(s1))  
+# S1中，出现次数最多的字符
+print(max(s1, key=s1.count))  
+print(s1.count('B'))
+# S1中B出现的次数
+```
+
+通过 Counter 类也可以给字符串计数
+```
+s1 = "AAAccBBe"  
+print(Counter(s1))
+
+# Counter({'A': 3, 'c': 2, 'B': 2, 'e': 1})
+```
+
+
+# 推导式的用法
+```
+corpus = ["我特别特别喜欢看电影",  
+          "这部电影真的是很好看的电影",  
+          "今天天气真好是难得的好天气",  
+          "我今天去看了一部电影",  
+          "电影院的电影都很好看"]  
+import jieba  
+  
+corpus_tokenized = [list(jieba.cut(sentence)) for sentence in corpus]  
+print(corpus_tokenized)
+```
+
+通过推导式，创建一个新的包含list的list
