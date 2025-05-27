@@ -110,6 +110,29 @@ tokens[-1:]
 * 所以tokens[-1:]代表为取最后一个元素
 ```
 
+
+```
+l1 = [1, 3]  
+print(l1[::2])  
+  
+l1 = [1, 3]  
+print(l1[::1])  
+  
+l1 = [1, 3, 5, 7, 9]  
+print(l1[::2])  
+  
+l1 = [1, 3, 5, 7, 9]  
+print(l1[::3])
+
+
+结果：
+[1]
+[1, 3]
+[1, 7]
+```
+
+步长代表每隔多少个，取一个，第一个都是默认进的。
+
 ## #切片 使用切片方式的插入
 
 ```
@@ -141,6 +164,10 @@ print(list1[-3:-4:-1])
 print(list1[-3:-2:-1])
 # [2] ，因为-1 代表start和end顺序变为从右到左，按照-3 到 -4，包含一个元素
 # [] ，因为-1 代表start和end顺序变为从右到左，按照-3 到 -2 顺序，不包含任何东西，所以为空
+
+
+print([1, 2, 3, 4, 5, 6][2:0:-1])
+[3, 2]，-1代表倒着来，start在2，结束在0，不包含1
 ```
 # MAX函数
 https://blog.csdn.net/u013250071/article/details/118220139
@@ -185,3 +212,18 @@ print(corpus_tokenized)
 ```
 
 通过推导式，创建一个新的包含list的list
+
+# enumerate
+https://blog.csdn.net/molangmolang/article/details/140560580
+`enumerate`函数在Python中是一个强大的内置函数，它允许我们在遍历序列（如列表、元组或[字符串](https://so.csdn.net/so/search?q=%E5%AD%97%E7%AC%A6%E4%B8%B2&spm=1001.2101.3001.7020)）的同时，获取每个元素的索引和值。
+
+可以设置参数start来设置初始索引。
+
+```
+word_list = list(set(words))  
+print(word_list)  
+  
+for index, word in enumerate(word_list, start=1):  
+    print(index, word)
+```
+

@@ -163,3 +163,66 @@ for x in df.index:
 print(df.to_string())
 ```
 
+
+## filter指定列
+```
+# 选择指定的列  
+df.filter(items=['column_name1', 'column_name2'])  
+  
+# 选择列名匹配正则表达式的列  
+df.filter(regex='regex')
+```
+
+
+# sort_index()
+* axis=0表示按照最左边一列的索引排序
+* axis=1表示按照最上面一行的索引排序
+* ascending=True，升序
+* ascending=False，降序
+
+# groupby 
+![[Pasted image 20250514162011.png]]
+
+
+# 绘图 plot
+```
+df.plot(kind='line',  
+        x='Year',  
+        y='Sales',  
+        title='Sales over years',  
+        xlabel='YEAR',  
+        ylabel='SALES',  
+        figsize=(12, 12)  
+        )  
+plt.show()
+```
+
+* x 代表横轴对应的值
+* y 代表纵轴对应的值
+* title代表图标名称
+* xlabel 横坐标标签
+* ylabel 纵坐标标签
+* figsize 图片大小
+
+也可以通过如下方式设置
+```
+plt.title('SALES')  
+plt.xlabel('Year')  
+plt.ylabel('Sales')  
+plt.grid(True)
+```
+
+
+
+# seaborn提供更加漂亮的图
+```
+data = {'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]}  
+df = pd.DataFrame(data)  
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')  
+plt.show()
+```
+
+cmap参数可以指定不同的调色板
+![[Pasted image 20250515204158.png]]
+
+调色板详情：https://blog.csdn.net/sgzqc/article/details/137977342
