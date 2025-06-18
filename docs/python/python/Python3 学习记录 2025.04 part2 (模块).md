@@ -55,6 +55,31 @@ obj.display()
 2. classmethod 更加关注类本身，第一个参数必须是cls
 3. property 可以让方法像属性一样被调用
 
+
+### 类的几种方法类型
+
+* 实例方法，需要接受self参数，可以访问类的实例
+	* 当通过类似 obj.method()方法调用时，obj会自动赋给self参数
+* 类方法，需要cls参数，可以调用到类本身
+* 静态方法，既不接受cls也不接受self，和类及其实例无关
+```
+class MyClass:
+    def method(self):
+        return 'instance method called', self
+
+    @classmethod
+    def classmethod(cls):
+        return 'class method called', cls
+
+    @staticmethod
+    def staticmethod():
+        return 'static method called'
+
+```
+
+参考资料 https://blog.csdn.net/lihao21/article/details/79762681
+
+
 # 模块
 1. 函数可以通过import 语句后直接使用，但是类不可以
 ```

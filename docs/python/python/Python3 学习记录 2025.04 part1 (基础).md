@@ -36,6 +36,20 @@ python中数字有四种类型：整数、布尔型、浮点数和复数。
 1. 一个用[]，另个用()
 2. list可变，tuple不可变
 3. 删除一个list元素 del list[2]
+4. 指定位置操作
+	1. 指定位置插入元素，insert(0,'xx')
+	2. 指定位置删除,pop(index)
+5. 删除操作
+	1. 后续不使用 del list[index]
+	2. 后续使用 x=pop(index)
+	3. pop()没有index，代表删除最后一个
+6. append 增加在末尾
+
+###  排序
+sort() 永久排序
+sorted()临时排序
+reverse()永久改变排序
+
 
 ## Set和Dict
 1. 都使用{}初始化
@@ -81,6 +95,8 @@ w1=f'{w["name"]}: {w["url"]}'
 w2=f"{w['name']}: {w['url']}"
 ```
 
+title()方法
+*  title() 方法返回"标题化"的字符串,就是说所有单词都是以大写开始，其余字母均为小写(见 istitle())。
 
 # 六、条件控制
 1. if，没有else if 只有elif
@@ -189,7 +205,7 @@ print(product)  # 输出：120
 	1. Set中移除指定元素
 	2. dict中没有这个函数
 	3. tuple不可修改，所以没有这个函数
-	4. list中，remove(x)，移除第一个匹配x的
+	4. list中，remove(x)，移除第一个匹配x的;如果不存在，会报错；
 5. pop(
 	1. Set中随机移除元素
 	2. Dict中,pop(key):指定key移除；popitem():删除最后一对key和value

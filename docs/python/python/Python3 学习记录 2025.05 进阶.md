@@ -34,6 +34,13 @@ t = ('我', '喜', '欢', '你')
 print("".join(t))
 ```
 最终返回用空字符串连接起t的一个字符串“我喜欢你”
+
+removeprefix("https://")
+去除前缀
+
+
+removesuffix()
+去除后缀
 # Pandas
 两个重要的数据结果
 1. Series:列，类似list，具备索引等功能
@@ -227,3 +234,43 @@ for index, word in enumerate(word_list, start=1):
     print(index, word)
 ```
 
+
+# 条件赋值
+```
+redis_host = 'redis' if use_docker else 'localhost'
+
+相当于：
+rh='redis'  
+if not use_docker:  
+    rh='localhost'
+
+语法：
+`value1 if condition else value2` 也称为三元运算符，在 Python 中也被称为条件表达式。
+```
+
+# 子进程
+```
+subprocess.run(  
+    ['npm', 'install'],   
+    cwd='frontend',  
+    check=True,  
+    shell=IS_WINDOWS  
+)
+```
+
+cwd参数代表子进程运行的工作目录，比如指定到‘/Applications’目录下
+
+获得输出结果：
+```
+process_result = subprocess.run(  
+    ['ls', '-a'],  
+    cwd=cwd,  
+    stdout=subprocess.PIPE,  
+)  
+content = process_result.stdout.decode()  
+print(content)
+```
+
+
+Popen() 提供除了run方法外的方式：
+https://zhuanlan.zhihu.com/p/664895510
